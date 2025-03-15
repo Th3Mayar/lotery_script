@@ -1,0 +1,28 @@
+{
+  "name": "lotery_script",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.13.10",
+    "prisma": "^6.5.0",
+    "sqlite3": "^5.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "dev": "bun run index.ts",
+    "build": "tsc",
+    "start": "bun run node dist/server.js"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  }
+}
